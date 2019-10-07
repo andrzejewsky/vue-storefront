@@ -74,13 +74,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~theme/css/base/global_vars';
 @import '~theme/css/variables/colors';
 @import '~theme/css/helpers/functions/color';
 $color-icon: color(black);
 $bg-icon: color(suva-gray);
 
 .cookie {
-  z-index: 2;
+  z-index: $z-index;
   bottom: 0;
 }
 
