@@ -14,7 +14,7 @@ import storeCodeFromRoute from '@vue-storefront/core/lib/storeCodeFromRoute'
 export const actions: ActionTree<UrlState, any> = {
   // if you want to use cache in your module you can load cached data like this
   async registerMapping ({ commit }, { url, routeData }: { url: string, routeData: any}) {
-    console.log('mapping fallback called')
+    console.log('registerMapping called')
     commit(types.REGISTER_MAPPING, { url, routeData })
     try {
       await cacheStorage.setItem(normalizeUrlPath(url), routeData, null, config.seo.disableUrlRoutesPersistentCache)
