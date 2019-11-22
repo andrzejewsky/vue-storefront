@@ -14,6 +14,8 @@ import { GoogleTagManagerModule } from './google-tag-manager';
 import { AmpRendererModule } from './amp-renderer';
 import { PaymentBackendMethodsModule } from './payment-backend-methods'
 import { PaymentCashOnDeliveryModule } from './payment-cash-on-delivery'
+import { CustomPageModule } from './custom-page'
+
 import { NewsletterModule } from '@vue-storefront/core/modules/newsletter'
 
 import { registerModule } from '@vue-storefront/core/lib/modules'
@@ -36,6 +38,7 @@ export function registerClientModules () {
   registerModule(AmpRendererModule)
   registerModule(CmsModule)
   registerModule(NewsletterModule)
+  registerModule(CustomPageModule)
 }
 
 // Deprecated API, will be removed in 2.0
